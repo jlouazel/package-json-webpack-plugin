@@ -1,0 +1,9 @@
+{
+  "name": "package-json-webpack-plugin",
+  "version": "0.1.0",
+  "description": "package.json generator as a webpack plugin",
+  "main": "lib/index.js",
+  "repository": "git@github.com:jlouazel/package-json-webpack-plugin.git",
+  "author": "Jean-Baptiste Louazel <jb.louazel@gmail.com>",
+  "license": "MIT"
+}
