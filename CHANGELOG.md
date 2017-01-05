@@ -12,4 +12,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - The plugin itself and the associated tooling to be able to release it.
 
-[0.1.1]: https://github.com/jlouazel/webpack/compare/v0.1.0...v0.1.1
+[0.1.1]: https://github.com/jlouazel/package-json-webpack-plugin/compare/v0.1.0...v0.1.1
