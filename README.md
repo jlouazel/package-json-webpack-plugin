@@ -1,2 +1,3 @@
 # package-json-webpack-plugin
-package.json generator as a webpack plugin.
+
+Webpack plugin that put a minimalist version of the main package.json in the output folder.
