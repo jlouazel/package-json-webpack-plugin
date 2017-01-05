@@ -9,13 +9,14 @@ export default {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'plugin.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
       },
     ]
   },
