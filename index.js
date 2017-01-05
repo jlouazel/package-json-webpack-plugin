@@ -19,7 +19,6 @@ class PackageJsonPlugin {
   }
 
   apply(compiler) {
-    // console.log(compiler);
     const ref = {
       context: compiler.options.context,
       output: compiler.options.output.path,
