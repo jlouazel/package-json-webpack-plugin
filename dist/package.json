@@ -1,7 +1,0 @@
-{
-  "name": "package-json-webpack-plugin",
-  "version": "0.1.0",
-  "author": "Jean-Baptiste Louazel <jb.louazel@gmail.com> (https://about.me/jlouazel)",
-  "main": "plugin.js",
-  "repository": "git@github.com:jlouazel/package-json-webpack-plugin.git"
-}
