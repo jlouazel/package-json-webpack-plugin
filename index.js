@@ -23,7 +23,7 @@ class PackageJsonPlugin {
       context: compiler.options.context,
       output: compiler.options.output.path,
       written: compiler.options.written,
-      filename: compiler.options.output.filename
+      filename: compiler.options.output.filename,
     };
 
     const destPackageFile = path.resolve(ref.output, 'package.json');
@@ -40,13 +40,14 @@ class PackageJsonPlugin {
             licence: options.licence
           };
 
-          if (!fs.existsSync(ref.output)){
-            fs.mkdirSync(ref.output);
-          }
+          const formattedOutput = `${JSON.stringify(obj, null, 2)}\n`;
 
-          fs.writeFile(destPackageFile, `${JSON.stringify(obj, null, 2)}\n`, () => {
-              callback();
-          });
+          compilation.assets['package.json'] = {
+            source: () => formattedOutput,
+            size: () => formattedOutput.length,
+          };
+
+          callback();
         })
         .catch(err => {
           console.error(err);
