@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.2] - 2017-01-08
+### Changed
+- Use compilation.assets to write final file.
+- Handle error in compilation.errors rather just print it.
+
 ## [0.1.1] - 2017-01-06
 ### Fixed
 - Target library is now setted to `commonjs2` which avoid empty import.
