@@ -50,7 +50,7 @@ class PackageJsonPlugin {
           callback();
         })
         .catch(err => {
-          console.error(err);
+          compilation.errors.push(err);
         });
     });
   }
