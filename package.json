@@ -1,6 +1,6 @@
 {
   "name": "package-json-webpack-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "package.json generator as a webpack plugin",
   "main": "index.js",
   "repository": "git@github.com:jlouazel/package-json-webpack-plugin.git",
